@@ -21,9 +21,7 @@ export class HomeComponent implements OnInit {
       }]
   });
 
-  add() {
-    this.chart.addPoint(Math.floor(Math.random()*10));
-  }
+ 
   constructor() { }
 
   ngOnInit() {
