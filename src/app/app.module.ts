@@ -7,6 +7,9 @@ import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http'
+import { DataService } from './data.service';
+import { ChartModule} from 'angular-highcharts';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,11 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   HttpClientModule,
+   ChartModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
