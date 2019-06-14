@@ -11,8 +11,8 @@ public class Rest{
     @GET
     public JsonArray hello() {
         return Json.createArrayBuilder().
-        add(hello("smart", 18)).
-        add(hello("nice", 42)).
+        add(hi("smart", 18)).
+        add(hi("nice", 42)).
         build();
     }
 public JsonObject hi(String name, int age) {
