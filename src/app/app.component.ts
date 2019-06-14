@@ -21,7 +21,7 @@ export class AppComponent implements OnInit{
       console.log("User Login: " + data.login);
     }
     )
-
+    this.http.get("C:\code\simple\src\rest.java");
   const req = this.http.post('http://jsonplaceholder.typicode.com/posts',{
     title: 'Test',
     body: 'Testing',
